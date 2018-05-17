@@ -1,0 +1,31 @@
+package com.jersey.friends.controller;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import com.jersey.friends.pojo.Friend;
+
+public class FriendsCollectionService {
+
+	
+		static HashMap<Integer, Friend> friendsMap;
+		
+		public FriendsCollectionService()
+		{
+			super();
+			Friend f1 = new Friend(1,"aa","aaaa" );
+			Friend f2 = new Friend(1,"bb","bbbb" );
+			Friend f3 = new Friend(1,"cc","cccc" );
+			
+			friendsMap.put(0, f1);
+			friendsMap.put(1, f2);
+			friendsMap.put(2, f3);
+		}
+
+		public List getAllFriend() {
+			// TODO Auto-generated method stub
+			List friends = new ArrayList(friendsMap.values());
+			return friends;
+		}
+}

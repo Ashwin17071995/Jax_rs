@@ -1,0 +1,22 @@
+package com.javaWS.ws;
+ 
+import javax.ws.rs.FormParam;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.MediaType; 
+ 
+@Path("/student")
+public class TestWS {	
+ @POST
+ @Path("/add")   
+ public Response addStudent(@FormParam("name") String name, @FormParam("rollNo") String rollNo) {		 
+	String output = "Name " +name+" Hello your id is : " + rollNo; 
+	
+	System.out.println(name + " "+ rollNo);
+	return Response.status(200).entity(output).build(); 
+ }
+}
