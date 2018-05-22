@@ -120,3 +120,6 @@
 127.0.0.1 - - [16/May/2018:15:29:57 +0530] "GET / HTTP/1.1" 404 951
 0:0:0:0:0:0:0:1 - - [16/May/2018:15:29:58 +0530] "GET /RestAPIFriends/ HTTP/1.1" 404 981
 0:0:0:0:0:0:0:1 - - [16/May/2018:15:30:12 +0530] "GET /RestAPIFriends/RestAPI/friends/getall HTTP/1.1" 500 4656
+127.0.0.1 - - [16/May/2018:15:32:15 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [16/May/2018:15:32:15 +0530] "GET /RestAPIFriends/ HTTP/1.1" 404 981
+0:0:0:0:0:0:0:1 - - [16/May/2018:15:32:21 +0530] "GET /RestAPIFriends/RestAPI/friends/getall HTTP/1.1" 500 4656

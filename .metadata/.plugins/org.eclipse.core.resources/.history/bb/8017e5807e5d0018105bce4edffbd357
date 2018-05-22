@@ -1,0 +1,9 @@
+package com.jersey.jaxrs;
+
+import javax.ws.rs.Path;
+
+
+@Path("/cities")
+public class CityController {
+	
+}

@@ -1,0 +1,20 @@
+package com.jersey.jaxrs;
+
+import java.util.HashMap;
+
+public class CityService {
+	
+	
+	static HashMap<Integer, City> cityMap = getCityMap();
+	
+	public CityService() {
+		
+	}
+
+	private static HashMap<Integer, City> getCityMap() {
+		// TODO Auto-generated method stub
+		return cityMap;
+	}
+
+
+}
